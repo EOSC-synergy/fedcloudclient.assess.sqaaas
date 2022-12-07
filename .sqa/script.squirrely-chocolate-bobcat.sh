@@ -1,4 +1,4 @@
 (
-cd github.com/tdviet4free/fedcloudclient &&
+cd github.com/tdviet/fedcloudclient &&
     rst-lint --level warning --format json .
 )
