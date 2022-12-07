@@ -5,7 +5,7 @@ config:
       branch: release/1.7.7
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/tdviet/fedcloudclient:
-      branch: master
+      branch: sqaaas-test
       repo: https://github.com/tdviet/fedcloudclient
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,56 +15,56 @@ sqa_criteria:
     repos:
       github.com/tdviet/fedcloudclient git:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-green-corgi.sh
-        container: qc.acc_stuffy-pear-insect
+        - /usr/bin/env sh .sqa/script.slaphappy-fuchsia-cow.sh
+        container: qc.acc_goopy-mauve-elephant
   QC.Doc:
     repos:
       github.com/tdviet/fedcloudclient find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-cardinal-hyena.sh
-        container: qc.doc_gummy-vermilion-tamarin
+        - /usr/bin/env sh .sqa/script.trippy-black-cassowary.sh
+        container: qc.doc_hilly-dandelion-bulldog
       github.com/tdviet/fedcloudclient git:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-champagne-maltese.sh
-        container: qc.doc_chummy-lemon-gorilla
+        - /usr/bin/env sh .sqa/script.lousy-cerulean-scorpion.sh
+        container: qc.doc_crappy-amber-eleuth
       github.com/tdviet/fedcloudclient markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-cardinal-shrimp.sh
-        container: qc.doc_wiggy-magenta-greyhound
+        - /usr/bin/env sh .sqa/script.gummy-chestnut-ant.sh
+        container: qc.doc_homey-razzmatazz-spaniel
       github.com/tdviet/fedcloudclient restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-chocolate-bobcat.sh
-        container: qc.doc_foggy-periwinkle-bat
+        - /usr/bin/env sh .sqa/script.wheezy-apricot-seal.sh
+        container: qc.doc_sleazy-olive-cockroach
   QC.Lic:
     repos:
       github.com/tdviet/fedcloudclient licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-apricot-dolphin.sh
-        container: qc.lic_cloudy-grey-lizard
+        - /usr/bin/env sh .sqa/script.squeaky-lilac-greyhound.sh
+        container: qc.lic_cloudy-platinum-antelope
   QC.Sec:
     repos:
       github.com/tdviet/fedcloudclient bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-corn-kudu.sh
-        container: qc.sec_skinny-apricot-meerkat
+        - /usr/bin/env sh .sqa/script.smelly-platinum-insect.sh
+        container: qc.sec_crabby-myrtle-newfoundland
   QC.Sty:
     repos:
       github.com/tdviet/fedcloudclient flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-charcoal-maltese.sh
-        container: qc.sty_snoopy-azure-terrier
+        - /usr/bin/env sh .sqa/script.woozy-white-bullfrog.sh
+        container: qc.sty_scaly-charcoal-devil
       github.com/tdviet/fedcloudclient hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-smalt-impala.sh
-        container: qc.sty_silly-sapphire-giraffe
+        - /usr/bin/env sh .sqa/script.seedy-chestnut-monster.sh
+        container: qc.sty_chummy-charcoal-beetle
       github.com/tdviet/fedcloudclient jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-aquamarine-cichlid.sh
-        container: qc.sty_lovely-beige-beaver
+        - /usr/bin/env sh .sqa/script.seedy-cream-bordeaux.sh
+        container: qc.sty_trippy-carmine-mouse
   QC.Ver:
     repos:
       github.com/tdviet/fedcloudclient get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-copper-sparrow.sh
-        container: qc.ver_sleepy-pumpkin-hyrax
+        - /usr/bin/env sh .sqa/script.thirsty-mauve-millipede.sh
+        container: qc.ver_droopy-goldenrod-iguana
 timeout: 1800
