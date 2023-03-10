@@ -5,7 +5,7 @@ config:
       branch: release/1.7.8
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/tdviet4free/fedcloudclient:
-      branch: master
+      branch: sqaaas-test
       repo: https://github.com/tdviet4free/fedcloudclient
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,62 +15,62 @@ sqa_criteria:
     repos:
       github.com/tdviet4free/fedcloudclient git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-plum-numbat.sh
-        container: qc.acc_scanty-green-weasel
+        - /usr/bin/env sh .sqa/script.skanky-blue-mandrill.sh
+        container: qc.acc_crabby-gold-ocelot
   QC.Doc:
     repos:
       github.com/tdviet4free/fedcloudclient find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-tomato-serval.sh
-        container: qc.doc_tasty-pumpkin-oyster
+        - /usr/bin/env sh .sqa/script.ugly-black-spoonbill.sh
+        container: qc.doc_wimpy-cerulean-cuttlefish
       github.com/tdviet4free/fedcloudclient git:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-persimmon-otter.sh
-        container: qc.doc_snoopy-goldenrod-wolfhound
+        - /usr/bin/env sh .sqa/script.goopy-bronze-chinchilla.sh
+        container: qc.doc_jumpy-russet-audemer
       github.com/tdviet4free/fedcloudclient markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-purple-donkey.sh
-        container: qc.doc_woozy-thistle-terrier
+        - /usr/bin/env sh .sqa/script.lousy-saffron-donkey.sh
+        container: qc.doc_cheeky-olivine-balinese
       github.com/tdviet4free/fedcloudclient restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-periwinkle-whale.sh
-        container: qc.doc_leaky-gold-havanese
+        - /usr/bin/env sh .sqa/script.pokey-peach-chicken.sh
+        container: qc.doc_gloppy-lemon-cow
   QC.Lic:
     repos:
       github.com/tdviet4free/fedcloudclient licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-xanthic-tuatara.sh
-        container: qc.lic_slimy-peach-cichlid
+        - /usr/bin/env sh .sqa/script.slaphappy-smalt-blue.sh
+        container: qc.lic_surly-chartreuse-kangaroo
   QC.Met:
     repos:
       github.com/tdviet4free/fedcloudclient validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-red-mastiff.sh
-        container: qc.met_woozy-pumpkin-pinscher
+        - /usr/bin/env sh .sqa/script.stinky-ecru-coral.sh
+        container: qc.met_surly-heliotrope-chinook
   QC.Sec:
     repos:
       github.com/tdviet4free/fedcloudclient bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-yellow-skunk.sh
-        container: qc.sec_slaphappy-green-loon
+        - /usr/bin/env sh .sqa/script.stealthy-apricot-tetra.sh
+        container: qc.sec_wiggy-ecru-dolphin
   QC.Sty:
     repos:
       github.com/tdviet4free/fedcloudclient flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-bronze-russel.sh
-        container: qc.sty_lumpy-denim-spider
+        - /usr/bin/env sh .sqa/script.whiny-cyan-sheep.sh
+        container: qc.sty_stuffy-sepia-monkey
       github.com/tdviet4free/fedcloudclient hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wiggy-razzmatazz-tzu.sh
-        container: qc.sty_whiny-sepia-rabbit
+        - /usr/bin/env sh .sqa/script.squirrely-jade-dhole.sh
+        container: qc.sty_craggy-wheat-chipmunk
       github.com/tdviet4free/fedcloudclient jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-cinnamon-binturong.sh
-        container: qc.sty_sleazy-indigo-russel
+        - /usr/bin/env sh .sqa/script.wheezy-ecru-bee.sh
+        container: qc.sty_sleepy-turquoise-malamute
   QC.Ver:
     repos:
       github.com/tdviet4free/fedcloudclient get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cozy-harlequin-spitz.sh
-        container: qc.ver_thirsty-cornflower-olm
+        - /usr/bin/env sh .sqa/script.homey-asparagus-dhole.sh
+        container: qc.ver_whiny-vermilion-snail
 timeout: 5400
