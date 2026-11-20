@@ -15,62 +15,62 @@ sqa_criteria:
     repos:
       github.com/tdviet/fedcloudclient git:
         commands:
-        - /usr/bin/env sh .sqa/script.ruby_carefree_unicorn.sh
-        container: qc.acc_dahlia_thoughtful_warthog
+        - /usr/bin/env sh .sqa/script.incarnadine_enigmatic_caribou.sh
+        container: qc.acc_butter_sincere_narwhal
   QC.Doc:
     repos:
       github.com/tdviet/fedcloudclient find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.navy_hardworking_alpaca.sh
-        container: qc.doc_ruby_anxious_ferret
+        - /usr/bin/env sh .sqa/script.maroon_graceful_spider.sh
+        container: qc.doc_glaucous_dramatic_jellyfish
       github.com/tdviet/fedcloudclient git:
         commands:
-        - /usr/bin/env sh .sqa/script.cinnabar_sociable_mink.sh
-        container: qc.doc_storm_practical_phoenix
+        - /usr/bin/env sh .sqa/script.cobalt_nurturing_pegasus.sh
+        container: qc.doc_fern_perky_quoll
       github.com/tdviet/fedcloudclient markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.butterscotch_wise_lynx.sh
-        container: qc.doc_cobalt_fearless_baboon
+        - /usr/bin/env sh .sqa/script.bronze_quirky_mandrill.sh
+        container: qc.doc_maroon_loyal_shark
       github.com/tdviet/fedcloudclient restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.mahogany_alert_dingo.sh
-        container: qc.doc_cornflower_authentic_seahorse
+        - /usr/bin/env sh .sqa/script.orange_nurturing_beaver.sh
+        container: qc.doc_teal_kind_chimpanzee
   QC.Lic:
     repos:
       github.com/tdviet/fedcloudclient licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.celadon_funny_lemur.sh
-        container: qc.lic_arctic_audacious_meerkat
+        - /usr/bin/env sh .sqa/script.denim_enthusiastic_sloth.sh
+        container: qc.lic_gamboge_assured_leopard
   QC.Sec:
     repos:
       github.com/tdviet/fedcloudclient bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.plum_outgoing_mink.sh
-        container: qc.sec_aquamarine_focused_ibex
+        - /usr/bin/env sh .sqa/script.tide_philosophical_boar.sh
+        container: qc.sec_glacier_eccentric_gnu
   QC.Sty:
     repos:
       github.com/tdviet/fedcloudclient flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.ceru_agile_chimpanzee.sh
-        container: qc.sty_ultramarine_resilient_penguin
+        - /usr/bin/env sh .sqa/script.coffee_sarcastic_roadrunner.sh
+        container: qc.sty_storm_sarcastic_coyote
       github.com/tdviet/fedcloudclient hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.cyan_delighted_starfish.sh
-        container: qc.sty_malachite_adaptable_dhole
+        - /usr/bin/env sh .sqa/script.cyan_gracious_serval.sh
+        container: qc.sty_incarnadine_harmonious_chinchilla
       github.com/tdviet/fedcloudclient jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flax_ambitious_ocelot.sh
-        container: qc.sty_crimson_rugged_shark
+        - /usr/bin/env sh .sqa/script.plum_intuitive_parrot.sh
+        container: qc.sty_daffodil_insightful_bat
   QC.Uni:
     repos:
       github.com/tdviet/fedcloudclient pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.caramel_feisty_otter.sh
-        container: qc.uni_avocado_agile_nymph
+        - /usr/bin/env sh .sqa/script.seafoam_calm_anaconda.sh
+        container: qc.uni_mist_thankful_angelfish
   QC.Ver:
     repos:
       github.com/tdviet/fedcloudclient get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.reef_daring_leopard.sh
-        container: qc.ver_sunset_curious_albatross
+        - /usr/bin/env sh .sqa/script.salmon_rugged_owl.sh
+        container: qc.ver_forest_gentle_ibis
 timeout: 5400
